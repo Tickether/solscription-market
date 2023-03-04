@@ -8,6 +8,7 @@ import Subscribe from './pages/subscribe/Subscribe';
 import Profile from './pages/profile/Profile';
 import Subscribed from './pages/subscribed/Subscribed';
 import Subscriptions from './pages/subscriptions/Subscriptions';
+import Navbar from './components/navbar/Navbar';
 
 
 
@@ -38,10 +39,11 @@ function App() {
     <div className="App">
       <WagmiConfig client={wagmiClient}>
         <Router>
+          <Navbar/>
           <Routes>
-            <Route path='/collection' element= {<Subscribed />} />
+            <Route path='/subscribed' element= {<Subscribed />} />
             <Route path='/profile' element= {<Profile />} />
-            <Route path='/contract/:contractaddress' element= {<Subscribe />} />
+            <Route path='/subscribe/:contractaddress' element= {<Subscribe />} />
             <Route path='/' element= {<Subscriptions />} />
           </Routes>
         </Router>

@@ -1,0 +1,11 @@
+
+
+.subscriptionDetails{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: 'Space Grotesk', sans-serif;
+}
