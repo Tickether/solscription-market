@@ -4,7 +4,7 @@ import { Web3Modal } from "@web3modal/react";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { sepolia, goerli, arbitrum, mainnet, polygon } from "wagmi/chains";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Subscribe from './pages/subscribe/Subscribe';
+import Subscribes from './pages/subscribes/Subscribes';
 import Profile from './pages/profile/Profile';
 import Subscribed from './pages/subscribed/Subscribed';
 import Subscriptions from './pages/subscriptions/Subscriptions';
@@ -43,7 +43,7 @@ function App() {
           <Routes>
             <Route path='/subscribed' element= {<Subscribed />} />
             <Route path='/profile' element= {<Profile />} />
-            <Route path='/subscribe/:contractaddress' element= {<Subscribe />} />
+            <Route path='/subscribe/:contractaddress' element= {<Subscribes />} />
             <Route path='/' element= {<Subscriptions />} />
           </Routes>
         </Router>

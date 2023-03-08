@@ -1,21 +1,19 @@
-.subscribe{
+.subscribes{
     display: flex;
     width: 100%;
     max-width: 100vw;
-    height: 1000px;
+    height: 100vh;
     background: #212427;
-    align-items: center;
     justify-content: center;
 }
-.subscribedContainer{
+.subscribesContainer{
     display: flex;
     width: 80%;
-    max-width: 80vw;
-    align-items: center;
-    justify-content: center;
+    margin-top: 100px;
 }
 
-.subscribeWrapper{
+.subscribesWrapper{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }

@@ -1,23 +1,23 @@
-import './subscription.css';
+import './merchant.css';
 import { Link } from 'react-router-dom';
 
 
 
-function Subscription({item}) {
+function Merchant({item}) {
   
   
   return (
-    <div className="subscription">
+    <div className="merchant">
         <Link to={`/subscribe/${item.name}`}>
             <div className="subscriptionCard">
               <img 
                   src="" 
                   alt="" 
-                  className="subscriptionImg" 
+                  className="merchantImg" 
               />
-              <div className="subscriptionDetails">
+              <div className="merchantDetails">
                   
-                  <h2 className="subsTitle">{item.name}</h2>
+                  <h2 className="merchantTitle">{item.name}</h2>
                   
               </div>
             </div>
@@ -27,4 +27,4 @@ function Subscription({item}) {
   );
 }
 
-export default Subscription;
+export default Merchant;

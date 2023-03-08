@@ -15,10 +15,10 @@ function Navbar() {
                     <img src={Logo} className="logo" />
                 </div>
                 <div className="navbarMenu">
-                <Link to=''>
+                <Link to='/'>
                     <span className="navbarSpan">Subscriptions</span>
                 </Link>
-                <Link to=''>
+                <Link to='/subscribed'>
                     <span className="navbarSpan">Subscribed</span>
                 </Link>
                 </div>

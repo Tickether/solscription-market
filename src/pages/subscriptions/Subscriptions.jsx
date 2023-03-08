@@ -1,13 +1,12 @@
 import './subscriptions.css';
 import useFetch from "../../hooks/useFetch";
-import Navbar from '../../components/navbar/Navbar';
-import Subscription from '../../components/subscription/Subscription';
+import Merchant from '../../components/merchant/Merchant';
 
 
 
 function Subscriptions() {
   
-  const {data, loading, reFetch} = useFetch(`https://solscription-deployer-api.onrender.com/api/subscriptions?name=0x1102`)
+  const {data, loading} = useFetch(`https://solscription-deployer-api.onrender.com/api/merchants`)
 
   console.log(data)
 
@@ -16,16 +15,16 @@ function Subscriptions() {
     <div className="subscriptions">
       <div className="subscriptionsContainer">
         <div className="subscriptionsWrapper">
-            {loading ? (
-              "loading"
-            ) : (
-              <>
-                {data.map(item=>(
-                    <Subscription item={item} key={item.contractAddress}/>
-                ))}
-              </>
-            )}
-          </div>
+          {loading ? (
+            "loading"
+          ) : (
+            <>
+              {data.map(item=>(
+                <Merchant item={item} key={item.name}/>
+              ))}
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
