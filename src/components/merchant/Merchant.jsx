@@ -9,7 +9,7 @@ function Merchant({item}) {
   return (
     <div className="merchant">
         <Link to={`/subscribe/${item.name}`}>
-            <div className="subscriptionCard">
+            <div className="merchantCard">
               <img 
                   src="" 
                   alt="" 
