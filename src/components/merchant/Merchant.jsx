@@ -1,5 +1,6 @@
 import './merchant.css';
 import { Link } from 'react-router-dom';
+import Netflix from '../../assets/netflix.jpg'
 
 
 
@@ -11,7 +12,7 @@ function Merchant({item}) {
         <Link to={`/subscribe/${item.name}`}>
             <div className="merchantCard">
               <img 
-                  src="" 
+                  src={Netflix} 
                   alt="" 
                   className="merchantImg" 
               />
